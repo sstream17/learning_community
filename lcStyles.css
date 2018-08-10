@@ -25,16 +25,24 @@ header {
 #navbar a {
   float: left;
   display: block;
+  width: 5em;
   color: #f2f2f2;
   text-align: center;
   padding: 14px;
   text-decoration: none;
 }
 
+/* Active page navbar links */
+body#home #navbar a#home,
+body#git #navbar a#git,
+body#resources #navbar a#resources
+{
+	background-color: #D00000;
+}
+
 /* Page content */
 .content {
   padding: 16px;
-  width: 15%;
 }
 
 /* The sticky class is added to the navbar with JS when it reaches its scroll position */
